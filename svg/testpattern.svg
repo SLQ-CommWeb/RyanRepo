@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgTag" viewBox="0 0 1000 1000" >
+	<defs>
+		<pattern id="patternTag" x="0" y="0" width="1000" height="1000" patternUnits="userSpaceOnUse" patternTransform="scale(.1,.1)">
+			<rect x="0" y="0" width="1000" height="200" fill="yellow"/>
+			<rect x="0" y="0" width="0" height="100" fill="rgba(0,0,0,0.6)">
+				<animate id="row1" attributeName="width"
+	                  from="0"  to="200"
+	                  begin="0s" dur="1s"
+	                  fill="freeze" repeatCount="0"/>
+			</rect>
+
+			<rect x="0" y="200" width="1000" height="200" fill="yellowgreen"/>
+			<rect x="0" y="200" width="200" height="100"  fill="rgba(0,0,0,0.6)">
+				<animate id="row2" attributeName="width"
+	                  from="200"  to="400"
+	                  begin="row1.end" dur="1s"
+	                  fill="freeze" repeatCount="0"/>	
+			</rect>
+
+			<rect x="0" y="400" width="1000" height="200" fill="cyan"/>
+			<rect x="0" y="400" width="400" height="100"  fill="rgba(0,0,0,0.6)">
+				<animate id="row3" attributeName="width"
+	                  from="400"  to="600"
+	                  begin="row2.end" dur="1s"
+	                  fill="freeze" repeatCount="0"/>	
+			</rect>
+
+			<rect x="0" y="600" width="1000" height="200" fill="teal"/>
+			<rect x="0" y="600" width="600" height="100"  fill="rgba(0,0,0,0.6)">
+				<animate id="row4" attributeName="width"
+	                  from="600"  to="800"
+	                  begin="row3.end" dur="1s"
+	                  fill="freeze" repeatCount="0"/>	
+			</rect>
+
+			<rect x="0" y="800" width="1000" height="200" fill="purple"/>
+			<rect x="0" y="800" width="800" height="100"  fill="rgba(0,0,0,0.6)">
+				<animate id="row5" attributeName="width"
+	                  from="800"  to="1000"
+	                  begin="row4.end" dur="1s"
+	                  fill="freeze" repeatCount="0"/>	
+			</rect>
+		</pattern>
+	</defs>
+
+	<rect x="0" y="0" width="1000" height="1000"
+      style="stroke: #000000; fill: url(#patternTag); " />
+</svg>

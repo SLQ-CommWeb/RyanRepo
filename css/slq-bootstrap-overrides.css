@@ -1,0 +1,304 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body{
+	padding-bottom:20px;
+}
+.jumbotron{
+	height:100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	padding-bottom:2em;
+}
+
+.jumbotron p{font-size:120%;}
+
+.dark{
+	color:#FFF;
+	text-shadow:0 1px rgba(0,0,0,0.3);
+	
+}
+.light{
+	color:#000;
+}
+
+.jumbotron.handwriting{
+	background:#CD4833 url('./?a=282257') no-repeat center center fixed; 
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+.jumbotron.calendar{
+	background:#d4dfbd;
+}
+
+.jumbotron.calendar h1, .jumbotron.calendar h2, .jumbotron.calendar p{
+	text-shadow:none;
+}
+
+
+@font-face {
+	font-family:'headline_onehplhs';
+	src:url('./?a=282262');
+	src:url('./?a=282262?#iefix') format('embedded-opentype'),
+	url('./?a=282261') format('woff2'),
+	url('./?a=282260') format('woff'),
+	url('./?a=282258') format('truetype'),
+	url('./?a=282303#headline_onehplhs') format('svg');
+	font-weight:normal;
+	font-style:normal;
+
+}
+
+@font-face {
+	font-family:'antonioregular';
+	src:url('../../dist/fonts/antonio-regular-webfont.eot');
+	src:url('../../dist/fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../../dist/fonts/antonio-regular-webfont.woff2') format('woff2'),
+	url('../../dist/fonts/antonio-regular-webfont.woff') format('woff'),
+	url('../../dist/fonts/antonio-regular-webfont.ttf') format('truetype'),
+	url('../../dist/fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+
+}
+
+@font-face {
+	font-family:'antoniobold';
+	src:url('../../dist/fonts/antonio-bold-webfont.eot');
+	src:url('../../dist/fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../../dist/fonts/antonio-bold-webfont.woff2') format('woff2'),
+	url('../../dist/fonts/antonio-bold-webfont.woff') format('woff'),
+	url('../../dist/fonts/antonio-bold-webfont.ttf') format('truetype'),
+	url('../../dist/fonts/antonio-bold-webfont.svg#antoniobold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+.parade{
+	background:#000;
+	z-index:1;
+	position:relative;
+}
+
+.parade:after{
+	content:"";
+	position:absolute;
+	background:#000000 url('./?a=282250') no-repeat center center fixed;
+	opacity:0.5;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	top:0;
+}
+
+.distant-lines h1{
+	font-family:'headline_onehplhs';
+	font-size:8.9em;
+	letter-spacing:0.03em;
+	padding-bottom:0;
+	margin-bottom:0;
+	line-height:0.8em;
+	/*border-bottom:solid 1px red;*/
+}
+
+.distant-lines h1 .parade-kerning-t{
+	letter-spacing:-0.1em;
+}
+
+.distant-lines h1 .parade-kerning-s{
+	letter-spacing:-0.02em;
+}
+.distant-lines h1 .parade-kerning-space{
+	letter-spacing:-0.05em;
+}
+
+.distant-lines h2{
+	font-family:'antoniobold';
+	font-size:2.3em;
+	/*border-top:solid 1px cyan;*/
+}
+
+.mensauxillary{
+	background:#000;
+	/*Fade to yellow?*/
+	background:#f5da74;
+	z-index:1;
+	position:relative; 
+}
+
+.mensauxillary:after{
+	content:"";
+	position:absolute;
+	background:url('./?a=282249') no-repeat center center fixed; 
+	opacity:0.3;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	top:0;
+	
+}
+
+.redcross{
+	/*background:#000;*/
+	background:#CD4833;
+	z-index:1;
+	position:relative; 
+}
+.redcross:after{
+	content:"";
+	position:absolute;
+	background:url('./?a=282251') no-repeat center center fixed; 
+	opacity:0.3;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	top:0;
+	
+}
+
+
+.jumbotron .caption{
+font-size:90%;
+}
+
+/*New classes*/
+
+.breathing-room{
+	height:2em;
+	background:none;
+}
+.shunt-down{
+	margin-bottom:4em;
+	background:none;
+}
+.clearing{
+	clear:both;
+}
+.sharing-icons{
+	padding-top:2em;
+}
+.sharing-icons img{
+	width:50px;
+	height:50px;
+	padding-left:0;
+	margin-left:-5px;
+	padding-right:1em;
+}
+
+.light.sharing-icons svg, .dark.sharing-icons svg{
+	border:solid 1px black;
+	width:40px;
+	height:40px;
+}
+
+.light hr{
+	border-top:solid 1px #000;
+}
+
+.dark hr{
+	border-top:solid 1px #fff;
+}
+
+.navbar.sharing-icons{
+	padding-top:0;
+	height:50px;overflow:hidden;
+	margin-bottom:0;
+}
+
+.navbar.sharing-icons img{
+	margin-left:0px;
+	padding-right:0.5em;
+	width:40px;
+	height:40px;
+	padding-top:10px;
+}
+.footer-container a:link{
+	color:#000;
+
+}
+
+/*Calendar styles*/
+
+.calendar-hero{
+	padding:1em;
+}
+
+.calendar-hero .date{
+	color:#fff;
+	font-size:2em;
+	letter-spacing:-0.05em;
+}
+
+
+/*weirdo extra ribbon*/
+
+/*.navbar .navbar-brand .qanzac-ribbon{
+	margin-left:5px;
+}
+
+.navbar .navbar-brand img.qanzac-ribbon{
+	position:absolute;
+	left:0;
+	top:50px;
+	width:45px;
+	height:110px;
+	z-index:1  !important;
+}
+*/
+
+/* OVERWRITE Default STYLES */
+
+/* navbar */
+.navbar-brand{
+	position:relative;
+	width:50px;
+	padding:5px;
+
+}
+.navbar-brand img{
+    width:40px;
+    height:40px;
+
+}
+
+.navbar a:link{
+	font-weight:800;
+	font-size:15pt;
+	/*fix busted fonts in safari bug*/
+	-webkit-font-smoothing: antialiased;
+}
+
+.ribbon-clipper{
+  	
+	clip: rect(535px 70px 1000px 0px);
+	position:absolute;
+	width:70px;
+	height: 130px;
+}
+
+.clip-ribbon{
+	position:fixed;
+	top:45px;
+	left:0px;
+	width:70px;
+	height: 130px;
+	background-image: url('./?a=282296');
+	background-repeat: no-repeat;
+	background-position:5px 55px ;
+	background-attachment:fixed ;
+	background-size:50px 110px;
+	z-index:30;
+}
+
+.container{padding-left:60px;}
+@media (max-width: 767px) {
+	.container{
+		text-align:center;
+		/*margin-left:50px;*/
+	}
+
+}
+
